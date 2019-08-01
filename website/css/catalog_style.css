@@ -2,6 +2,11 @@ body {
 	margin:0px;
 }
 
+a {
+	text-decoration: none;
+	color: white;
+}
+
 .clearfix::after {
 	content: "";
 	display: table;
@@ -98,12 +103,19 @@ body {
 	height: 40px;
 	background-color: #0c171d;
 }
+
 	@media (min-width: 640px) {
 		.main {
 			display: flex;
 			justify-content: space-between;
 			flex-direction: row-reverse;
 			flex-wrap: wrap;
+		}
+	}
+
+	@media (max-width: 640px) {
+		.header-list__item_info {
+			display: none;
 		}
 	}
 
@@ -118,15 +130,20 @@ body {
 .main__item_content {
 	align-items: baseline;
 	display: flex;
-	flex: 3;
+	flex: 6;
 	font-size: 10pt;
 	flex-direction: row;
 	flex-wrap: wrap;
 }
 
-.main__item_sidebar {
-	flex: 1;
-	min-width: 150px;
+.main__item_wallpapers {
+	justify-content: center;
+	align-items: baseline;
+	display: flex;
+	flex: 6;
+	font-size: 10pt;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 .article-item {
@@ -147,6 +164,10 @@ body {
 	padding: 0px 15px;
 }
 
+.article-item_wallpapers {
+	max-width: 200px;
+}
+
 .main__item-image {
 	vertical-align: middle;
 }
@@ -161,7 +182,7 @@ body {
 }
 
 .list-stat {
-	margin: 0px 20px 20px auto;
+	margin: 20px 10px;
 }
 
 .list-stat__item {
@@ -182,6 +203,15 @@ body {
 	list-style: none;
 }
 
+.main__item_sidebar {
+	flex: 1;
+	min-width: 230px;
+	margin: 30px 30px;
+	color: #88919d;
+	background-color: #0c171d;
+	border-radius: 4px;
+}
+
 .list-stat__item {
 	padding: 0 30px;
 	height: 20px;
@@ -195,6 +225,24 @@ body {
 	background-position: -10px -10px;
 }
 
+.list-categories {
+	display: inline;
+
+}
+
+.list-categories__item {
+	padding: 10px 50px;
+	border-bottom: 1px solid black;
+	border-radius: 4px;
+	list-style: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	cursor: pointer;
+}
+.list-categories__item:hover {
+	background-color: #01080ab5;
+}
+
 .list-stat__item_like {
 	width: 15px;
 	height: 15px;
@@ -205,4 +253,54 @@ body {
 	margin: 0px;
 	list-style: none;
 	display: none;
+}
+
+.sidebar__name {
+	text-align: center;
+}
+
+.image-wall {
+	width: 100%;
+	max-height: 300px;
+}
+
+.modal-wallpaper-show {
+	display: none;
+	text-align: center;
+	position: absolute;
+	top:14%;
+	left: 17%;
+	height: 80vh;
+	width: 80vh;
+}
+
+.modal-wallpaper-show__item {
+	height: 70vh;
+	/*max-width: 50vw;*/
+}
+
+.modal-wallpaper-show__btn {
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	vertical-align: middle;
+	position: relative;
+	top: 45%;
+	cursor: pointer;
+	margin: 10px;
+	border-radius: 4px;
+	background-color: black;
+}
+
+.modal-wallpaper-show__btn_right {
+	left:-52%;
+}
+
+.modal-wallpaper-show__btn_left {
+	left:52%;
+}
+
+.wallpaper-item {
+	height: 250px;
+	background-size: cover;	
 }
