@@ -200,3 +200,9 @@ body {
 	height: 15px;
 	background-position: -3px -44px;
 }
+ 
+.list-categories__sub {
+	margin: 0px;
+	list-style: none;
+	display: none;
+}
