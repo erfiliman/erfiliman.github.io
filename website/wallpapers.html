@@ -11,13 +11,13 @@
 </head>
 <body>
 	<div class="wraper">
-		<header class="header">
+			<header class="header">
 			<div class="header-content">
 				<ul class="header-list right">
 					<li class="header-list__item header-list__item_info">
 						<a href="./index.html">
 							<img src="img/logo.png" alt="" class="logo">
-						</a>    
+						</a>	
 					</li>
 					<li class="header-list__item header-list__item_search">
 						<div class="search">
@@ -28,11 +28,39 @@
 						</div>
 					</li>
 					<li class="header-list__item header-list__item_autho">
-						<a href="#">Login</a>
+						<a class="login" href="#">Login</a>
 						<span>/</span>
-						<a href="#">Register</a>
+						<a class="register" href="#">Register</a>
 					</li>
 				</ul>
+			</div>
+			<div class="modal-autho modal-autho_login">
+				<div class="modal-autho__panel">
+					<span class="modal-name modal-name_autho">Авторизция</span>
+					<a href="#" class="close-btn">&#215;</a>
+				</div>
+				<form action class="autho-form">
+					<input class="autho-form__item autho-form__item_text" type="text" placeholder="Логин"  required>
+					<input class="autho-form__item autho-form__item_pas" type="password" placeholder="Пароль"  required>
+					<a href="#" class="forget-btn">Восстановить пароль</a>
+					<button class="autho-form__item autho-form__item_sign" type="submit" name="button-sign">Войти</button>
+				</form>
+			</div>
+			<div class="modal-autho modal-autho_register">
+				<div class="modal-autho__panel">
+					<span class="modal-name modal-name_reg">Регистрация</span>
+					<a href="#" class="close-btn">&#215;</a>
+				</div>
+				<form action class="autho-form">
+					<input class="autho-form__item autho-form__item_text" type="text" placeholder="Логин"  required>
+					<span class="check-req check-req_login">&#10004;</span>
+					<input class="autho-form__item autho-form__item_email" type="email" placeholder="E-mail"  required>
+					<span class="check-req check-req_email">&#10004;</span>
+					<input class="autho-form__item autho-form__item_pas" type="password" placeholder="Пароль" id="register-password" required>
+					<span class="check-req check-req_password">&#10004;</span>
+					<input class="autho-form__item autho-form__item_pas" type="password" placeholder="Пароль" id="register-password-confirm" required>
+					<button class="autho-form__item autho-form__item_register" type="submit" name="button-sign">Зарегистрироваться</button>
+				</form>
 			</div>
 		</header>
 		<main class="main">
@@ -46,46 +74,146 @@
 					<li class="list-categories__item list-categories__item_soft">
 						<a href="#">soft</a>
 						<ul class="list-categories__sub soft-list">
-							<li class="soft-list_item"><a href="https://vk.com/im?peers=378076621">текст</a></li>
-							<li class="soft-list_item"><a href="#">текст</a></li>
-							<li class="soft-list_item"><a href="#">текст</a></li>
-							<li class="soft-list_item"><a href="#">текст</a></li>
+							<li class="sub-item">
+								<a class="logo-text" href="./index.html">
+									<span class="icon-sub icon-sub_soft1"></span>
+									Подкатегория
+								</a>
+							</li>
+							<li class="sub-item">
+								<a class="logo-text" href="./index.html">
+									<span class="icon-sub icon-sub_soft1"></span>
+									Подкатегория
+								</a>
+							</li>
+							<li class="sub-item">
+								<a class="logo-text" href="./index.html">
+									<span class="icon-sub icon-sub_soft1"></span>
+									Подкатегория
+								</a>
+							</li>
+							<li class="sub-item">
+								<a class="logo-text" href="./index.html">
+									<span class="icon-sub icon-sub_soft1"></span>
+									Подкатегория
+								</a>
+							</li>
 						</ul>
 					</li>
 					<li class="list-categories__item list-categories__item_it-news">
 						<a href="#">it - news</a>
-						<ul class="list-categories__sub it-news">
-							<li class="it-news_item"><a href="#">текст</a></li>
-							<li class="it-news_item"><a href="#">текст</a></li>
-							<li class="it-news_item"><a href="#">текст</a></li>
-							<li class="it-news_item"><a href="#">текст</a></li>
+						<ul class="list-categories__sub soft-list">
+							<li class="sub-item">
+								<a class="logo-text" href="./index.html">
+									<span class="icon-sub icon-sub_soft1"></span>
+									Подкатегория
+								</a>
+							</li>
+							<li class="sub-item">
+								<a class="logo-text" href="./index.html">
+									<span class="icon-sub icon-sub_soft1"></span>
+									Подкатегория
+								</a>
+							</li>
+							<li class="sub-item">
+								<a class="logo-text" href="./index.html">
+									<span class="icon-sub icon-sub_soft1"></span>
+									Подкатегория
+								</a>
+							</li>
+							<li class="sub-item">
+								<a class="logo-text" href="./index.html">
+									<span class="icon-sub icon-sub_soft1"></span>
+									Подкатегория
+								</a>
+							</li>
 						</ul>
 					</li>
 					<li class="list-categories__item list-categories__item_services">
 						<a href="#">services</a>
-						<ul class="list-categories__sub services">
-							<li class="services_item"><a href="#">текст</a></li>
-							<li class="services_item"><a href="#">текст</a></li>
-							<li class="services_item"><a href="#">текст</a></li>
-							<li class="services_item"><a href="#">текст</a></li>
+						<ul class="list-categories__sub soft-list">
+							<li class="sub-item">
+								<a class="logo-text" href="./index.html">
+									<span class="icon-sub icon-sub_soft1"></span>
+									Подкатегория
+								</a>
+							</li>
+							<li class="sub-item">
+								<a class="logo-text" href="./index.html">
+									<span class="icon-sub icon-sub_soft1"></span>
+									Подкатегория
+								</a>
+							</li>
+							<li class="sub-item">
+								<a class="logo-text" href="./index.html">
+									<span class="icon-sub icon-sub_soft1"></span>
+									Подкатегория
+								</a>
+							</li>
+							<li class="sub-item">
+								<a class="logo-text" href="./">
+									<span class="icon-sub icon-sub_soft1"></span>
+									Подкатегория
+								</a>
+							</li>
 						</ul>
 					</li>
 					<li class="list-categories__item list-categories__item_add">
 						<a href="#">Announcement</a>
-						<ul class="list-categories__sub add">
-							<li class="add_item"><a href="#">текст</a></li>
-							<li class="add_item"><a href="#">текст</a></li>
-							<li class="add_item"><a href="#">текст</a></li>
-							<li class="add_item"><a href="#">текст</a></li>
+						<ul class="list-categories__sub soft-list">
+							<li class="sub-item">
+								<a class="logo-text" href="./index.html">
+									<span class="icon-sub icon-sub_soft1"></span>
+									Подкатегория
+								</a>
+							</li>
+							<li class="sub-item">
+								<a class="logo-text" href="./index.html">
+									<span class="icon-sub icon-sub_soft1"></span>
+									Подкатегория
+								</a>
+							</li>
+							<li class="sub-item">
+								<a class="logo-text" href="./index.html">
+									<span class="icon-sub icon-sub_soft1"></span>
+									Подкатегория
+								</a>
+							</li>
+							<li class="sub-item">
+								<a class="logo-text" href="./index.html">
+									<span class="icon-sub icon-sub_soft1"></span>
+									Подкатегория
+								</a>
+							</li>
 						</ul>
 					</li>
 					<li class="list-categories__item list-categories__item_reports">
 						<a href="#">reports</a>
-						<ul class="list-categories__sub reports">
-							<li class="add_item"><a href="#">текст</a></li>
-							<li class="add_item"><a href="#">текст</a></li>
-							<li class="add_item"><a href="#">текст</a></li>
-							<li class="add_item"><a href="#">текст</a></li>
+						<ul class="list-categories__sub soft-list">
+							<li class="sub-item">
+								<a class="logo-text" href="./index.html">
+									<span class="icon-sub icon-sub_soft1"></span>
+									Подкатегория
+								</a>
+							</li>
+							<li class="sub-item">
+								<a class="logo-text" href="./index.html">
+									<span class="icon-sub icon-sub_soft1"></span>
+									Подкатегория
+								</a>
+							</li>
+							<li class="sub-item">
+								<a class="logo-text" href="./index.html">
+									<span class="icon-sub icon-sub_soft1"></span>
+									Подкатегория
+								</a>
+							</li>
+							<li class="sub-item">
+								<a class="logo-text" href="./index.html">
+									<span class="icon-sub icon-sub_soft1"></span>
+									Подкатегория
+								</a>
+							</li>
 						</ul>
 					</li>
 					<li class="list-categories__item list-categories__item_wallpapers">
