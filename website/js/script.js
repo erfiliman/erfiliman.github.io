@@ -19,15 +19,32 @@ function nextBg(el) {
 		console.log(bg);
 	});
 
-	$('.header-list__item_autho').on('click', function() {
-		var modal = $('.modal-autho');
+	$('.login').on('click', function() {
+		var modal = $('.modal-autho_login');
 		var winH = $(window).height();
 		var winW = $(window).width();
 		modal.css('top', winH/2-modal.height()/2);
 		modal.css('left', winW/2-modal.width()/2);
-		$('.modal-autho').fadeIn(200);
+		$('.modal-autho_login').fadeIn(200);
 	});
+
+	$('.register').on('click', function() {
+		var modal = $('.modal-autho_register');
+		var winH = $(window).height();
+		var winW = $(window).width();
+		modal.css('top', winH/2-modal.height()/2);
+		modal.css('left', winW/2-modal.width()/2);
+		$('.modal-autho_register').fadeIn(200);
+	});
+
 	$('.close-btn').on('click', function (){
 			$('.modal-autho').fadeOut(200);
+	});
+
+	$('#register-password-confirm, #register-password').on('keyup', function () {
+		if ($('#register-password').val() == $('#register-password-confirm').val()) {
+			$('.check-req_password').html('&#10004;').css('color','lime').show(100);
+		} else 
+		$('.check-req_password').html('&#10008;').css('color', 'red').show(100);
 	});
 });

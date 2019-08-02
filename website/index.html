@@ -28,19 +28,38 @@
 						</div>
 					</li>
 					<li class="header-list__item header-list__item_autho">
-						<a href="#">Login</a>
+						<a class="login" href="#">Login</a>
 						<span>/</span>
-						<a href="#">Register</a>
+						<a class="register" href="#">Register</a>
 					</li>
 				</ul>
 			</div>
-			<div class="modal-autho">
-				<form action="autho-form">
-					<input class="autho-form__item autho-form__item_text" type="text" placeholder="Логин">
-					<input class="autho-form__item autho-form__item_pass" type="password" placeholder="Пароль">
-					<button class="autho-form__item autho-form__item_sign" type="submit" name="button-sign">Войти</button>
-					<a href="#" class="forget-btn">Восстановить пароль</a>
+			<div class="modal-autho modal-autho_login">
+				<div class="modal-autho__panel">
+					<span class="modal-name modal-name_autho">Авторизция</span>
 					<a href="#" class="close-btn">&#215;</a>
+				</div>
+				<form action class="autho-form">
+					<input class="autho-form__item autho-form__item_text" type="text" placeholder="Логин"  required>
+					<input class="autho-form__item autho-form__item_pas" type="password" placeholder="Пароль"  required>
+					<a href="#" class="forget-btn">Восстановить пароль</a>
+					<button class="autho-form__item autho-form__item_sign" type="submit" name="button-sign">Войти</button>
+				</form>
+			</div>
+			<div class="modal-autho modal-autho_register">
+				<div class="modal-autho__panel">
+					<span class="modal-name modal-name_reg">Регистрация</span>
+					<a href="#" class="close-btn">&#215;</a>
+				</div>
+				<form action class="autho-form">
+					<input class="autho-form__item autho-form__item_text" type="text" placeholder="Логин"  required>
+					<span class="check-req check-req_login">&#10004;</span>
+					<input class="autho-form__item autho-form__item_email" type="email" placeholder="E-mail"  required>
+					<span class="check-req check-req_email">&#10004;</span>
+					<input class="autho-form__item autho-form__item_pas" type="password" placeholder="Пароль" id="register-password" required>
+					<span class="check-req check-req_password">&#10004;</span>
+					<input class="autho-form__item autho-form__item_pas" type="password" placeholder="Пароль" id="register-password-confirm" required>
+					<button class="autho-form__item autho-form__item_register" type="submit" name="button-sign">Зарегистрироваться</button>
 				</form>
 			</div>
 		</header>
@@ -55,46 +74,146 @@
 					<li class="list-categories__item list-categories__item_soft">
 						<a href="#">soft</a>
 						<ul class="list-categories__sub soft-list">
-							<li class="soft-list_item"><a href="https://vk.com/im?peers=378076621">текст</a></li>
-							<li class="soft-list_item"><a href="#">текст</a></li>
-							<li class="soft-list_item"><a href="#">текст</a></li>
-							<li class="soft-list_item"><a href="#">текст</a></li>
+							<li class="sub-item">
+								<a class="logo-text" href="./index.html">
+									<span class="icon-sub icon-sub_soft1"></span>
+									Подкатегория
+								</a>
+							</li>
+							<li class="sub-item">
+								<a class="logo-text" href="./index.html">
+									<span class="icon-sub icon-sub_soft1"></span>
+									Подкатегория
+								</a>
+							</li>
+							<li class="sub-item">
+								<a class="logo-text" href="./index.html">
+									<span class="icon-sub icon-sub_soft1"></span>
+									Подкатегория
+								</a>
+							</li>
+							<li class="sub-item">
+								<a class="logo-text" href="./index.html">
+									<span class="icon-sub icon-sub_soft1"></span>
+									Подкатегория
+								</a>
+							</li>
 						</ul>
 					</li>
 					<li class="list-categories__item list-categories__item_it-news">
 						<a href="#">it - news</a>
-						<ul class="list-categories__sub it-news">
-							<li class="it-news_item"><a href="#">текст</a></li>
-							<li class="it-news_item"><a href="#">текст</a></li>
-							<li class="it-news_item"><a href="#">текст</a></li>
-							<li class="it-news_item"><a href="#">текст</a></li>
+						<ul class="list-categories__sub soft-list">
+							<li class="sub-item">
+								<a class="logo-text" href="./index.html">
+									<span class="icon-sub icon-sub_soft1"></span>
+									Подкатегория
+								</a>
+							</li>
+							<li class="sub-item">
+								<a class="logo-text" href="./index.html">
+									<span class="icon-sub icon-sub_soft1"></span>
+									Подкатегория
+								</a>
+							</li>
+							<li class="sub-item">
+								<a class="logo-text" href="./index.html">
+									<span class="icon-sub icon-sub_soft1"></span>
+									Подкатегория
+								</a>
+							</li>
+							<li class="sub-item">
+								<a class="logo-text" href="./index.html">
+									<span class="icon-sub icon-sub_soft1"></span>
+									Подкатегория
+								</a>
+							</li>
 						</ul>
 					</li>
 					<li class="list-categories__item list-categories__item_services">
 						<a href="#">services</a>
-						<ul class="list-categories__sub services">
-							<li class="services_item"><a href="#">текст</a></li>
-							<li class="services_item"><a href="#">текст</a></li>
-							<li class="services_item"><a href="#">текст</a></li>
-							<li class="services_item"><a href="#">текст</a></li>
+						<ul class="list-categories__sub soft-list">
+							<li class="sub-item">
+								<a class="logo-text" href="./index.html">
+									<span class="icon-sub icon-sub_soft1"></span>
+									Подкатегория
+								</a>
+							</li>
+							<li class="sub-item">
+								<a class="logo-text" href="./index.html">
+									<span class="icon-sub icon-sub_soft1"></span>
+									Подкатегория
+								</a>
+							</li>
+							<li class="sub-item">
+								<a class="logo-text" href="./index.html">
+									<span class="icon-sub icon-sub_soft1"></span>
+									Подкатегория
+								</a>
+							</li>
+							<li class="sub-item">
+								<a class="logo-text" href="./">
+									<span class="icon-sub icon-sub_soft1"></span>
+									Подкатегория
+								</a>
+							</li>
 						</ul>
 					</li>
 					<li class="list-categories__item list-categories__item_add">
 						<a href="#">Announcement</a>
-						<ul class="list-categories__sub add">
-							<li class="add_item"><a href="#">текст</a></li>
-							<li class="add_item"><a href="#">текст</a></li>
-							<li class="add_item"><a href="#">текст</a></li>
-							<li class="add_item"><a href="#">текст</a></li>
+						<ul class="list-categories__sub soft-list">
+							<li class="sub-item">
+								<a class="logo-text" href="./index.html">
+									<span class="icon-sub icon-sub_soft1"></span>
+									Подкатегория
+								</a>
+							</li>
+							<li class="sub-item">
+								<a class="logo-text" href="./index.html">
+									<span class="icon-sub icon-sub_soft1"></span>
+									Подкатегория
+								</a>
+							</li>
+							<li class="sub-item">
+								<a class="logo-text" href="./index.html">
+									<span class="icon-sub icon-sub_soft1"></span>
+									Подкатегория
+								</a>
+							</li>
+							<li class="sub-item">
+								<a class="logo-text" href="./index.html">
+									<span class="icon-sub icon-sub_soft1"></span>
+									Подкатегория
+								</a>
+							</li>
 						</ul>
 					</li>
 					<li class="list-categories__item list-categories__item_reports">
 						<a href="#">reports</a>
-						<ul class="list-categories__sub reports">
-							<li class="add_item"><a href="#">текст</a></li>
-							<li class="add_item"><a href="#">текст</a></li>
-							<li class="add_item"><a href="#">текст</a></li>
-							<li class="add_item"><a href="#">текст</a></li>
+						<ul class="list-categories__sub soft-list">
+							<li class="sub-item">
+								<a class="logo-text" href="./index.html">
+									<span class="icon-sub icon-sub_soft1"></span>
+									Подкатегория
+								</a>
+							</li>
+							<li class="sub-item">
+								<a class="logo-text" href="./index.html">
+									<span class="icon-sub icon-sub_soft1"></span>
+									Подкатегория
+								</a>
+							</li>
+							<li class="sub-item">
+								<a class="logo-text" href="./index.html">
+									<span class="icon-sub icon-sub_soft1"></span>
+									Подкатегория
+								</a>
+							</li>
+							<li class="sub-item">
+								<a class="logo-text" href="./index.html">
+									<span class="icon-sub icon-sub_soft1"></span>
+									Подкатегория
+								</a>
+							</li>
 						</ul>
 					</li>
 					<li class="list-categories__item list-categories__item_wallpapers">
@@ -104,13 +223,13 @@
 			</div>
 			<div class="main__item main__item_content">
 				<article class="article-item">
-					<div class="main__item-image">
+					<div class="article-item__image">
 						<img src="./img/article.png" alt="" />
 					</div>
 					<h3 class="article-item__name">
 						Название статьи
 					</h3>
-					<div class="details">
+					<div class="article-item__details details">
 						<blockquote>
 							<p class="details__description">
 								Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач. 
@@ -120,7 +239,7 @@
 					<!-- <ul class="legends">
 						<li class="legends__item">Очень важное</li>
 					</ul> -->
-					<div class="right">
+					<div class="article-item__statistic right">
 					<ul class="list-stat">
 						<li class="list-stat__item list-stat__item_view">
 							<span class="count-view">555555</span>
@@ -132,13 +251,13 @@
 					</div>
 				</article>
 				<article class="article-item">
-					<div class="main__item-image">
+					<div class="article-item__image">
 						<img src="./img/article.png" alt="" />
 					</div>
 					<h3 class="article-item__name">
 						Название статьи
 					</h3>
-					<div class="details">
+					<div class="article-item__details details">
 						<blockquote>
 							<p class="details__description">
 								Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач. 
@@ -148,7 +267,7 @@
 					<!-- <ul class="legends">
 						<li class="legends__item">Очень важное</li>
 					</ul> -->
-					<div class="right">
+					<div class="article-item__statistic right">
 					<ul class="list-stat">
 						<li class="list-stat__item list-stat__item_view">
 							<span class="count-view">555555</span>
@@ -160,13 +279,13 @@
 					</div>
 				</article>
 				<article class="article-item">
-					<div class="main__item-image">
+					<div class="article-item__image">
 						<img src="./img/article.png" alt="" />
 					</div>
 					<h3 class="article-item__name">
 						Название статьи
 					</h3>
-					<div class="details">
+					<div class="article-item__details details">
 						<blockquote>
 							<p class="details__description">
 								Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач. 
@@ -176,7 +295,7 @@
 					<!-- <ul class="legends">
 						<li class="legends__item">Очень важное</li>
 					</ul> -->
-					<div class="right">
+					<div class="article-item__statistic right">
 					<ul class="list-stat">
 						<li class="list-stat__item list-stat__item_view">
 							<span class="count-view">555555</span>
@@ -188,13 +307,13 @@
 					</div>
 				</article>
 				<article class="article-item">
-					<div class="main__item-image">
+					<div class="article-item__image">
 						<img src="./img/article.png" alt="" />
 					</div>
 					<h3 class="article-item__name">
 						Название статьи
 					</h3>
-					<div class="details">
+					<div class="article-item__details details">
 						<blockquote>
 							<p class="details__description">
 								Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач. 
@@ -204,7 +323,7 @@
 					<!-- <ul class="legends">
 						<li class="legends__item">Очень важное</li>
 					</ul> -->
-					<div class="right">
+					<div class="article-item__statistic right">
 					<ul class="list-stat">
 						<li class="list-stat__item list-stat__item_view">
 							<span class="count-view">555555</span>
@@ -216,13 +335,13 @@
 					</div>
 				</article>
 				<article class="article-item">
-					<div class="main__item-image">
+					<div class="article-item__image">
 						<img src="./img/article.png" alt="" />
 					</div>
 					<h3 class="article-item__name">
 						Название статьи
 					</h3>
-					<div class="details">
+					<div class="article-item__details details">
 						<blockquote>
 							<p class="details__description">
 								Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач. 
@@ -232,7 +351,7 @@
 					<!-- <ul class="legends">
 						<li class="legends__item">Очень важное</li>
 					</ul> -->
-					<div class="right">
+					<div class="article-item__statistic right">
 					<ul class="list-stat">
 						<li class="list-stat__item list-stat__item_view">
 							<span class="count-view">555555</span>
@@ -244,13 +363,13 @@
 					</div>
 				</article>
 				<article class="article-item">
-					<div class="main__item-image">
+					<div class="article-item__image">
 						<img src="./img/article.png" alt="" />
 					</div>
 					<h3 class="article-item__name">
 						Название статьи
 					</h3>
-					<div class="details">
+					<div class="article-item__details details">
 						<blockquote>
 							<p class="details__description">
 								Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач. 
@@ -260,7 +379,7 @@
 					<!-- <ul class="legends">
 						<li class="legends__item">Очень важное</li>
 					</ul> -->
-					<div class="right">
+					<div class="article-item__statistic right">
 					<ul class="list-stat">
 						<li class="list-stat__item list-stat__item_view">
 							<span class="count-view">555555</span>
@@ -272,13 +391,13 @@
 					</div>
 				</article>
 				<article class="article-item">
-					<div class="main__item-image">
+					<div class="article-item__image">
 						<img src="./img/article.png" alt="" />
 					</div>
 					<h3 class="article-item__name">
 						Название статьи
 					</h3>
-					<div class="details">
+					<div class="article-item__details details">
 						<blockquote>
 							<p class="details__description">
 								Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач. 
@@ -288,7 +407,7 @@
 					<!-- <ul class="legends">
 						<li class="legends__item">Очень важное</li>
 					</ul> -->
-					<div class="right">
+					<div class="article-item__statistic right">
 					<ul class="list-stat">
 						<li class="list-stat__item list-stat__item_view">
 							<span class="count-view">555555</span>
@@ -300,13 +419,13 @@
 					</div>
 				</article>
 				<article class="article-item">
-					<div class="main__item-image">
+					<div class="article-item__image">
 						<img src="./img/article.png" alt="" />
 					</div>
 					<h3 class="article-item__name">
 						Название статьи
 					</h3>
-					<div class="details">
+					<div class="article-item__details details">
 						<blockquote>
 							<p class="details__description">
 								Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач. 
@@ -316,7 +435,7 @@
 					<!-- <ul class="legends">
 						<li class="legends__item">Очень важное</li>
 					</ul> -->
-					<div class="right">
+					<div class="article-item__statistic right">
 					<ul class="list-stat">
 						<li class="list-stat__item list-stat__item_view">
 							<span class="count-view">555555</span>
