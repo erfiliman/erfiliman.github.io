@@ -1,5 +1,6 @@
 $(function(){
-var isVisMenu = false;
+
+	var menuIsVis = true;
 
 	$( ".content-list__link" ).hover(
 		function() {
@@ -10,9 +11,16 @@ var isVisMenu = false;
 		}
 	);
 
-	
-		if ($(window).width()<=480) {
-			$('.top-menu').prepend("<div class='mobile-menu'>Menu</div>");
-		}
+	$(".mobile-menu").on("click", function() {
+		$(".list-menu").toggle("fast");
+			if(menuIsVis==true) {
+				$(".header").animate({"border-width":"60px", "height": "350px"}, { duration: 200, queue: false });
+				menuIsVis = false;
+			}
+				else {
+					$(".header").animate({"border-width":"440px", "height": "730px"}, { duration: 200, queue: false });
+					menuIsVis = true;
+				}
+	});
 
 });
