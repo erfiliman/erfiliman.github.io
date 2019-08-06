@@ -25,7 +25,7 @@ html {
 
 @font-face {
 	font-family: MyriadPro;
-	src: url(../_fonts/MyriadPro-LightSemiCn.ttf);
+	src: url(../fonts/MyriadPro-LightSemiCn.ttf);
 }
 
 body {
@@ -57,8 +57,8 @@ ol, ul {
 	min-width: 1000px;
 
 	border-bottom: solid black 48px;
-	border-image: url(../_img/border.jpg) 100 repeat repeat;
-	background: linear-gradient(180deg, rgba(124,124,124,1) 0%, rgba(255,255,255,1) 100%), url(../_img/back.png) repeat;
+	border-image: url(../img/border.jpg) 100 repeat repeat;
+	background: linear-gradient(180deg, rgba(124,124,124,1) 0%, rgba(255,255,255,1) 100%), url(../img/back.png) repeat;
 	background-blend-mode: multiply;
 
 	-webkit-box-shadow: -1px 2px 7px 0px rgba(0,0,0,0.71);
@@ -128,7 +128,7 @@ ol, ul {
 
 	background-color: #080808;
 	border-radius: 17px;
-	background-image: url(../_img/logo.png);
+	background-image: url(../img/logo.png);
 	background-repeat: no-repeat;
 	background-position: 56% 34%;
 }
@@ -154,7 +154,7 @@ ol, ul {
 	margin-left: 7px;
 	margin-top: 89px;
 
-	background: url(../_img/background-information.jpg) -7px 448px rgb(166, 95, 48);
+	background: url(../img/background-information.jpg) -7px 448px rgb(166, 95, 48);
 	background-blend-mode: multiply;
 	border-top-right-radius: 13px;
 	border-bottom-right-radius: 13px;
@@ -169,7 +169,7 @@ ol, ul {
 
 	font: italic bold 22px/22px Arial, sans-serif;
 
-	background: url(../_img/background-information.jpg) 100% 8% rgb(166, 95, 48);
+	background: url(../img/background-information.jpg) 100% 8% rgb(166, 95, 48);
 	background-blend-mode: multiply;
 	border-top-left-radius: 13px;
 	color: #e7eeef;
@@ -212,14 +212,14 @@ ol, ul {
 	width: 723px;
 	height: 198px;
 	border-radius: 17px;
-	background: url(../_img/background-information.jpg);
+	background: url(../img/background-information.jpg);
  }
 
 .top-personal-panel {
 	float:left;
 	height: 33px;
 	width: 941px;
-	background: url(../_img/top-personal-panel-bg.png);
+	background: url(../img/top-personal-panel-bg.png);
 	border-radius: 17px;
 }
 
@@ -288,7 +288,7 @@ ol, ul {
     display: inline-block;
     float: left;
 
-	background: url("../_img/basket.png") no-repeat;
+	background: url("../img/basket.png") no-repeat;
 	background-position: 0% 60%;
 }
 
@@ -500,7 +500,7 @@ ol, ul {
 	height: 170px;
 	min-width: 1000px;
 
-	background: linear-gradient(180deg, rgba(124,124,124,1) 0%, rgba(255,255,255,1) 100%), url(../_img/back.png) repeat;
+	background: linear-gradient(180deg, rgba(124,124,124,1) 0%, rgba(255,255,255,1) 100%), url(../img/back.png) repeat;
 	background-blend-mode: multiply;
 
 	-webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.24);
@@ -545,7 +545,7 @@ ol, ul {
 	margin-top: 9px;
 
 
-	background: url(../_img/copy-logo.png) center center no-repeat;
+	background: url(../img/copy-logo.png) center center no-repeat;
 }
 
 .copyright__logo-text {
@@ -611,7 +611,7 @@ ol, ul {
 	margin-top: 63px;
 	margin-right: -163px;
 
-	background: url(../_img/ya-met.png);
+	background: url(../img/ya-met.png);
 }
 
 .content-list__link:hover, .catalog-list__link:hover, .news-list__link:hover  {
@@ -805,7 +805,7 @@ ol, ul {
 
 		font: 15px/15px Arial, sans-serif;
 
-		background: url("../_img/icon-menu.png") center left no-repeat;
+		background: url("../img/icon-menu.png") center left no-repeat;
 		
 	}
 
