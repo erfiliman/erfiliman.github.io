@@ -693,8 +693,7 @@ ol, ul {
 
 
 	.information {
-	position: relative;
-	left: -53px;		
+	margin-left: -53px;		
 
 	width: 263px;
 	padding: 8px 42px;

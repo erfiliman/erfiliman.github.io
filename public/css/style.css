@@ -633,13 +633,14 @@ ol, ul {
 	}
 
 	.header-content, .main-content, .foot-content {
-		width: 480px;
+		width: 100%;
 		min-width: 320px;
 	}
 
 	.main-content {
 		padding-bottom: 52px;
 	}
+
 
 	.basket-dash {
 		content: "-";
@@ -693,8 +694,7 @@ ol, ul {
 
 
 	.information {
-	position: relative;
-	left: -53px;		
+	margin-left: -53px;		
 
 	width: 263px;
 	padding: 8px 42px;
@@ -991,4 +991,9 @@ ol, ul {
 	.ya-met {
 		margin-top: 78px;
 	}
+
+	.header, .main, .footer {
+		width: 100%;
+	}
+
 }
