@@ -12,15 +12,16 @@ $(function(){
 	);
 
 	$(".mobile-menu").on("click", function() {
-		$(".list-menu").toggle("fast");
-			if(menuIsVis==true) {
-				$(".header").animate({"border-width":"60px", "height": "350px"}, { duration: 200, queue: false });
-				menuIsVis = false;
-			}
-				else {
-					$(".header").animate({"border-width":"440px", "height": "730px"}, { duration: 200, queue: false });
-					menuIsVis = true;
-				}
+		$(".list-menu").slideToggle("fast");
+	});
+
+	$(window).on("resize", function() {
+		if($(window).innerWidth()>480) {
+			$(".list-menu").css("display","inline-block");
+		}
+		if($(window).innerWidth()<480) {
+			$(".list-menu").css("display","flex");
+		}
 	});
 
 });
