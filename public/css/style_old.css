@@ -3,7 +3,7 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
+b, u, i,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
@@ -46,6 +46,7 @@ ol, ul {
 	padding: 0;
 	outline: none;
 	word-break: break-all;
+	letter-spacing: -0.0px;
 
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -138,8 +139,6 @@ ol, ul {
 	background-image: url(../img/logo.png);
 	background-repeat: no-repeat;
 	background-position: 63px 42px;
-
-	overflow: hidden;
 }
 
 .information {
@@ -170,6 +169,7 @@ ol, ul {
 	padding: 13px 30px;
 
 	font: italic bold 24px/17px Arial, sans-serif;
+	letter-spacing: -1.2px;
 
     background: #0a050178;
 	border-top-left-radius: 13px;
@@ -209,12 +209,12 @@ ol, ul {
 }
 
 .name-company {
-	display: block;
-	margin: 137px 0px 0px 38px;
-	width: 140px;
+	position: relative;
+	top: 137px;
+	left: 38px;
 
 	font: 24px/23px Arial, Tahoma, sans-serif;
-	word-break: break-all;
+	letter-spacing: 1.7px;
 
 	text-decoration: none;
 	color: #e7eeef;
@@ -228,7 +228,7 @@ ol, ul {
  }
 
 .top-personal-panel {
-	display: inline-flex;
+	float:left;
 
 	height: 34px;
 	width: 941px;
@@ -237,8 +237,7 @@ ol, ul {
 }
 
 .autho {
-	display: inline-flex;
-	align-items: baseline;
+	display: inline-block;
 	margin: 6px 0px 0px 22px;
 
 	font: 12px/12px Tahoma, sans-serif;
@@ -254,7 +253,9 @@ ol, ul {
 
 	height: 22px;
 	width: 116px;
-	margin: 0px 22px 0px 6px;
+	margin:0px 18px 0px 3px;
+/* 	margin-left: 3px;
+margin-right: 18px; */
 	padding: 0px 0px 0px 7px;
 
 	border: none;
@@ -269,14 +270,12 @@ ol, ul {
 
 .label-form_login {
 	display: inline-block;
-	width: 38px;
 }
 
 .label-form_password {
 	display: inline-block;
 	position: relative;
 	top: 1px;
-	width: 45px;
 } 
 
 .autho__input:valid, .autho__input:focus {
@@ -305,11 +304,13 @@ ol, ul {
 }
 
 .autho__btn_sign {
-	margin:0px 26px 0px -7px;
+	margin:0px 23px 0px -7px;
 }
 
 .basket {
-	margin: 13px 25px 0px 220px;
+	float: right;
+
+	margin: 13px 27px 0px 0px;
 
 	font: 12px/12px Arial, sans-serif;
 	font-weight: 100;
@@ -317,6 +318,7 @@ ol, ul {
 
 .basket-count-items {
 	font-weight: bold;
+	letter-spacing: 0.12px;
 }
 
 .basket-logo {
@@ -354,10 +356,11 @@ ol, ul {
 .no-decoration {
 	text-decoration: none;
 	color: #ffffff;
-
+	letter-spacing: -0.25px;
 }
 
 .underline {
+	letter-spacing: 0.4px;
 
 	border-bottom: 1px solid;
 	display: inline-block;
@@ -374,7 +377,7 @@ ol, ul {
 .list-menu__item {
 	float: left;
 
-	margin: 5px 83px 0px 0px;
+	margin: 5px 85px 0px 0px;
 }
 
 .list-menu__item_last {
@@ -383,6 +386,7 @@ ol, ul {
 
 .list-menu__link {
 	font: 16px/17px Arial, sans-serif;
+	letter-spacing: -0.22px;
 
 	border-bottom: 1px solid;
 	text-decoration: none;
@@ -447,11 +451,11 @@ ol, ul {
 
 .news-list {
 	width: 164px;
-	margin: 21px 0px 0px 2px;
+	margin: 20px 0px 0px 2px;
 }
 
 .news-list__item {
-	margin: 8px 0px 8px 1px;
+	margin: 8px 0px 10px 1px;
 }
 
 .news-list__link {
@@ -464,11 +468,11 @@ ol, ul {
 }
 
 .news-list__time-item {
-	height: 33px;
+	height: 30px;
 	width: 137px;
-	margin: 4px 0px 0px 0px;
+	margin: 6px 0px 0px 0px;
 
-	font: 10px/20px Arial, sans-serif;
+	font: 10px/16px Arial, sans-serif;
 
 	border-bottom: 2px solid #dadada;
 	color: #666666;
@@ -499,10 +503,7 @@ ol, ul {
 }
 
 .content-list__item {
-	display: flex;
-	flex-wrap: wrap;
 	margin:0px 32px 53px 0px;
-	width: 220px;
 }
 
 .content-list li:nth-child(3n) {
@@ -535,7 +536,6 @@ ol, ul {
 
 .content-list__link {
 	display: block;
-	order: 1;
 	max-width: 220px;
 	margin: 9.5px 1px 1px 0px;
 
@@ -546,16 +546,13 @@ ol, ul {
 	text-decoration: underline;
 }
 
-.content-list__link:hover + .content-image {
-	border-color: #00b31d;
-}
-
 .product-information {
 	margin: 21px 7px 0px 218px;
 }
 
 .product-information__title {
 	font: bold 13px/13px Arial, sans-serif;
+	letter-spacing: 0.29px;
 	color: #666666;
 }
 
@@ -576,6 +573,7 @@ ol, ul {
 	word-break: break-word;
 
 	text-align: justify;
+	letter-spacing: 0.12px;
 }
 
 .first-stuff-par {
@@ -585,6 +583,7 @@ ol, ul {
 	word-break: break-word;
 
 	text-align: justify;
+	letter-spacing: 0.12px;
 }
 
 .footer {
@@ -626,12 +625,15 @@ ol, ul {
 
 .copyright__small {
 	font-size: 11px;
+	letter-spacing: -0.1px;
 }
 
 .copyright__large {
 	margin: 7px 0px 0px -1px;
 	font-family: Tahoma, Arial, sans-serif;
 	font-size:12px;
+
+	letter-spacing: 0.27px;
 }
 
 .bold {
@@ -650,15 +652,17 @@ ol, ul {
 	margin: 8px 0px 0px -2px;
 
 	font: 9px/9px Arial, sans-serif;
+	letter-spacing: 0.7px;
 
 	color: #e7eeef;
 	text-transform: uppercase;
 }
 
+.submenu {
+}
 
 .submenu-list {
 	display: inline-flex;
-	flex-wrap: wrap;
 	width: 500px;
 	margin: 1px 0px 0px 15px;
 
@@ -692,6 +696,7 @@ ol, ul {
 .developer__link {
 	padding: 0px 3px 0px 0px; 
 	word-break: break-all;
+	letter-spacing: -0.15px;
 
 	color: #ffffff;
 	text-decoration: none;
@@ -703,12 +708,12 @@ ol, ul {
 	word-spacing: -0.2px;
 
 	float: right;
-	margin: 2px 0px 0px 73px;
+	margin: 2px -4px 0px 0px;
 	color: #ffffff;
 }
 
 .ya-met {	
-	margin: 50px 0px 0px 146px;
+	margin: 65px 0px 0px 146px;
 	height: 31px;
 	width: 88px;
 	background: url('../img/sprites.png') -125px -10px;
@@ -716,16 +721,6 @@ ol, ul {
 
 .content-list__link:hover, .catalog-list__link:hover, .news-list__link:hover  {
 	color: #549ef1;
-}
-
-.submenu {
-	width: 515px;
-}
-
-.dev {
-	display: flex;
-	flex-wrap: wrap;
-	width: 246px;
 }
 
 .mobile-menu, .list-mobile {
@@ -858,6 +853,7 @@ ol, ul {
 	}
 
 	.phone {
+		letter-spacing: -0.2px;
 	}
 
 	.mail {
@@ -1040,7 +1036,6 @@ ol, ul {
 
 	.content-list__item {
 		margin:0px 6px 50px 8px;
-		width: 205px;
 	}
 
 	.content-list li:nth-child(3n) {
@@ -1115,6 +1110,7 @@ ol, ul {
 		margin: 0px 0px 0px 5px;
 
 		font: bold 21px/21px Arial, sans-serif;
+		letter-spacing: 0.1px;
 	}
 
 	.product-information__stuff {
@@ -1141,5 +1137,63 @@ ol, ul {
 	.ya-met {
 		margin: 78px -163px 0px 0px;
 	}
+
+}
+
+@-moz-document url-prefix() {
+	.label-form{
+		letter-spacing: -0.12px;
+	}
+
+	.autho__btn {
+		letter-spacing: -0.06px;
+	}
+
+	.no-decoration {
+		letter-spacing: -0.22px;
+	}
+
+	.underline {
+		letter-spacing: 0px;
+	}
+
+	.mail > a {
+		letter-spacing: -0.07px;
+	}
+
+	.catalog-list__link {
+		letter-spacing: 0.04px;
+		word-spacing: 0.7px;
+	}
+
+	.content-list__link {
+		letter-spacing: -0.11px;
+	}
+
+	.product-information__stuff > p {
+		line-height: 1.335em;
+		letter-spacing: -0.05px;
+	}
+
+	.product-information__title {
+		letter-spacing: 0px;
+	}
+
+	.copyright__small {
+		letter-spacing: 0px;
+	}
+
+	.copyright__large {
+		letter-spacing: -0.02px;
+	}
+
+	.copyright__logo-text {
+		letter-spacing: 0.6px;
+	}
+
+	.submenu-list__link {
+		letter-spacing: -0.1px;
+	}
+
 
 }
