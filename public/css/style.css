@@ -145,8 +145,14 @@ ol, ul {
 .information {
 	display: inline-flex;
 	flex-wrap: wrap;
+	width: 723px;
+	height: 199px;
+	border-radius: 17px;
+	background: url(../img/background-information.jpg) 0px -1px;
+	background-size: cover;
+	
 	overflow: hidden;
-}
+ }
 
 .information__item {
 	max-height: 95px;
@@ -229,12 +235,6 @@ ol, ul {
 	color: #e7eeef;
 	text-transform: uppercase;
 }
-.information {
-	width: 723px;
-	height: 199px;
-	border-radius: 17px;
-	background: url(../img/background-information.jpg) 0px -1px;
- }
 
 .top-personal-panel {
 	display: inline-flex;
