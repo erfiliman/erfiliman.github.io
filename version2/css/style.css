@@ -44,7 +44,7 @@ table {
 
 @font-face{
     font-family:'Kizo';
-    src:url('https://github.com/erfiliman/erfiliman.github.io/blob/master/version2/fonts/Kizo.otf');
+    src:url("../fonts/kizo.otf");
     font-weight:400;
     font-style:normal;
 }
@@ -66,7 +66,7 @@ table {
 	width: 250px;
 	max-width: 33%;
 	height: 250px;
-	background: url("https://github.com/erfiliman/erfiliman.github.io/blob/master/version2/img/logo.png") no-repeat center center;
+	background: url("../img/logo.png") no-repeat center center;
 }
 
 .header-menu {
@@ -96,7 +96,7 @@ table {
 	display: flex;
 	flex-wrap: nowrap;
 	height: calc(100vh - 240px);
-	background: url("https://github.com/erfiliman/erfiliman.github.io/blob/master/version2/img/background.png");
+	background: url("../img/background.png");
 	background-size: 45% 100%;
 	background-color: white;
 	background-repeat: no-repeat;
@@ -172,7 +172,7 @@ table {
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: nowrap;
-	background: url("https://github.com/erfiliman/erfiliman.github.io/blob/master/version2/img/line.png") no-repeat;
+	background: url("../img/line.png") no-repeat;
 	background-size: contain;
 	min-height: 440px;
 	align-items: center;
@@ -231,7 +231,7 @@ table {
 
 .about-information {
 	min-height: 870px;
-	background: url("https://github.com/erfiliman/erfiliman.github.io/blob/master/version2/img/background3.png");
+	background: url("../img/background3.png");
 	background-size: 55% 101%;
 	background-color: #c9c7c3;
 	background-repeat: no-repeat;
@@ -261,19 +261,19 @@ table {
 }
 
 .list-image_kurs {
-	background-image: url("https://github.com/erfiliman/erfiliman.github.io/blob/master/version2/img/image-m1.png");
+	background-image: url("../img/image-m1.png");
 	background-size: contain;
 	background-repeat: no-repeat;
 }
 
 .list-image_practic {
-	background-image: url("https://github.com/erfiliman/erfiliman.github.io/blob/master/version2/img/image-m3.png");
+	background-image: url("../img/image-m3.png");
 	background-size: contain;
 	background-repeat: no-repeat;
 }
 
 .list-image_skill {
-	background-image: url("https://github.com/erfiliman/erfiliman.github.io/blob/master/version2/img/image-m2.png");
+	background-image: url("../img/image-m2.png");
 	background-size: contain;
 	background-repeat: no-repeat;
 }
@@ -351,7 +351,7 @@ table {
 }
 
 .kurs-basics {
-	background: url("https://github.com/erfiliman/erfiliman.github.io/blob/master/version2/img/photo2.png");
+	background: url("../img/photo2.png");
 	background-size: 62% auto;
 	background-color: #f2f2f2;
 	background-repeat: no-repeat;
@@ -435,7 +435,7 @@ table {
 }
 
 .kurs-target {
-	background: url("https://github.com/erfiliman/erfiliman.github.io/blob/master/version2/img/background.png");
+	background: url("../img/background.png");
 	background-size: 45% 101%;
 	background-color: #f2f2f2;
 	background-repeat: no-repeat;
@@ -457,7 +457,7 @@ table {
 }
 
 .kurs-target-logo {
-	background-image: url("https://github.com/erfiliman/erfiliman.github.io/blob/master/version2/img/logo_grey.png");
+	background-image: url("../img/logo_grey.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 673px;
@@ -475,11 +475,11 @@ table {
 }
 
 .kt-list-image_bottom {
-	background-image: url("https://github.com/erfiliman/erfiliman.github.io/blob/master/version2/img/photo3.png");
+	background-image: url("../img/photo3.png");
 }
 
 .kt-list-image_top {
-	background-image: url("https://github.com/erfiliman/erfiliman.github.io/blob/master/version2/img/photo4.png");
+	background-image: url("../img/photo4.png");
 }
 
 .kt-list-label {
@@ -534,7 +534,7 @@ table {
 
 .feedback {
 	min-height: 500px;
-	background: url("https://github.com/erfiliman/erfiliman.github.io/blob/master/version2/img/background1.png");
+	background: url("../img/background1.png");
 	background-size: 55% 70%;
     background-position-y: center;
 	background-color: #ffffff;
@@ -734,7 +734,7 @@ table {
 .footer-logo {
 	width: 250px;
 	height: 250px;
-	background: url("https://github.com/erfiliman/erfiliman.github.io/blob/master/version2/img/logo.png") no-repeat center center;
+	background: url("../img/logo.png") no-repeat center center;
 }
 
 .fc-title__item {
@@ -767,15 +767,15 @@ table {
 }
 
 .social-ico__item_wp {
-	background: url("https://github.com/erfiliman/erfiliman.github.io/blob/master/version2/img/wp.png") no-repeat center center/contain;
+	background: url("../img/wp.png") no-repeat center center/contain;
 }
 
 .social-ico__item_inst {
-	background: url("https://github.com/erfiliman/erfiliman.github.io/blob/master/version2/img/inst.png") no-repeat center center/contain;
+	background: url("../img/inst.png") no-repeat center center/contain;
 }
 
 .social-ico__item_vk {
-	background: url("https://github.com/erfiliman/erfiliman.github.io/blob/master/version2/img/vk.png") no-repeat center center/contain;
+	background: url("../img/vk.png") no-repeat center center/contain;
 }
 
 .social-ico {
