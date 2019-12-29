@@ -43,10 +43,10 @@ table {
 }
 
 @font-face{
-    font-family:'Kizo';
-    src:url("../fonts/kizo.otf");
-    font-weight:400;
-    font-style:normal;
+	font-family:'Kizo';
+	src:url('../fonts/kizo.otf');
+	font-weight:400;
+	font-style:normal;
 }
 
 .wraper {
@@ -142,6 +142,7 @@ table {
 	background-color: #3b3b3b;
 	color: #ffffff;
 	font-size: 51px;
+	text-decoration: none;
 }
 
 .label-line {
@@ -156,8 +157,12 @@ table {
 	background-color: #ffffff;
 }
 
+.btn-mobile {
+	display: none;
+}
+
 .main-text {
-    max-height: 650px;
+	max-height: 650px;
 	display: flex;
 	width: 100%;
 	flex-wrap: wrap;
@@ -331,6 +336,7 @@ table {
 	max-width: 250px;
 	text-align: center;
 	margin-top: 40px;
+	text-decoration: none;
 }
 
 .kurs-add {
@@ -524,9 +530,9 @@ table {
 .feedback-label__item {
 	-webkit-transform: rotate(180deg);
 	   -moz-transform: rotate(180deg);
-	    -ms-transform: rotate(180deg);
-	     -o-transform: rotate(180deg);
-	        transform: rotate(180deg);
+		-ms-transform: rotate(180deg);
+		 -o-transform: rotate(180deg);
+			transform: rotate(180deg);
 	text-transform: uppercase;
 	margin: 0 10px;
 	padding: 20px 0px;
@@ -536,7 +542,7 @@ table {
 	min-height: 500px;
 	background: url("../img/background1.png");
 	background-size: 55% 70%;
-    background-position-y: center;
+	background-position-y: center;
 	background-color: #ffffff;
 	background-repeat: no-repeat;
 	display: flex;
@@ -575,6 +581,32 @@ table {
 	font-weight: 600;
 	margin-top: 10px;
 	margin-bottom: 10px;
+}
+
+.main-subtitle:hover {
+	cursor: pointer;
+}
+
+#toTop {
+	width:35px;
+	height: 35px;
+	background:#f7f7f7;
+	text-align:center;
+	padding:5px;
+	text-transform: uppercase;
+	position:fixed;
+	bottom:10px; 
+	background-image: url("../img/arrow.png");
+	background-size: 25px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	right:10px;
+	cursor:pointer;
+	display:none;
+	color:#353e47;
+	font-family:"Kizo";
+	font-size:24px;
+	opacity: 0.8;
 }
 
 .label-line__item_top-f {
@@ -619,8 +651,8 @@ table {
 	margin-top: -30px;
 	background-color: #ffffff;
 	position: relative;
-    top: -26px;
-    padding: 0px 15px;
+	top: -26px;
+	padding: 0px 15px;
 }
 
 .qf-input {
@@ -659,12 +691,12 @@ table {
 
 .qf-input_question {
 	padding-left: 100px;
-	width: 607px;
+	width: 509px;
 }
 
 .cell-form > label {
 	z-index: 3;
-    position: relative;
+	position: relative;
 
 }
 
@@ -682,7 +714,7 @@ table {
 .qf-input_question {
 	position: relative;
 	z-index: 2;
-	left: -86px;
+	left: -88px;
 }
 
 .question-form__item {
@@ -809,6 +841,492 @@ table {
 	margin: 0 auto;
 }
 
+.kurs-invite__button:hover {
+	cursor: pointer;
+}
+
+.social-ico__item:hover {
+	cursor: pointer;
+}
+
 @media (max-width: 480px) {
+	.header {
+		display: flex;
+		flex-wrap: wrap;
+		height: 80px;
+		background-color: #353e47;
+	}
+
+	.header-menu {
+		display: none;
+		position: relative;
+		background-color: #353e47;
+		top: -2px;
+		margin-top: 0px;
+	}
+
+	.header-menu-list {
+		display: flex;
+		flex-wrap: wrap;
+		/* background-color: #353e47; */
+		padding: 15px 0px;
+	}
+
+	.header-menu-list__item {
+		margin: 10px 90px;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		border-bottom: 2px solid white;
+	}
+
+	.hedaer-menu-list-link {
+		color: #ffffff;
+	}
 	
+	.header-logo {
+		width: 75px;
+		/* max-width: 33%; */
+		height: 75px;
+		background: url(../img/logo.png) no-repeat center center/contain;
+		margin-left: 204px;
+	}
+
+	.main-photo__item {
+		width: 270px;
+	}
+
+	.main-label {
+		display: none;
+	}
+
+	.main-title__item {
+		font-size: 38px;
+		color: #ffffff;
+	}
+
+	.main-text__item {
+		background-color: #353e47;
+		width: 300px;
+		margin: -191px 18px 0px 0px;
+	}
+
+	.main-title {
+		margin: 25px;
+	}
+
+	.main-subtitle {
+		margin: 25px;
+	}
+
+	.main-subtitle__item {
+		background-color: #000000;
+		color: #ffffff;
+		font-size: 28px;
+		text-decoration: none;
+	}
+
+	.main {
+		padding-top: 0px;
+		margin-top: 0px;
+		display: flex;
+		justify-content: baseline;
+		flex-wrap: wrap;
+		background-image: none;
+		background-color: white;
+		background-repeat: no-repeat;
+		min-height: 450px;
+	}
+	.main-text {
+		justify-content: flex-end;
+	}
+
+	.main-photo {
+		margin: 35px 0px 0px 25px;
+	}
+	.about-discription {
+		max-width: 197px;
+		margin-top: 2px;
+	}
+	.about-title__item {
+		font-family: "Kizo";
+		text-transform: uppercase;
+		color: #3b3b3b;
+		font-size: 51px;
+		font-weight: 600;
+	}
+	.about-discription__item {
+		font-family: "Kizo";
+		text-transform: uppercase;
+		color: #3b3b3b;
+		font-size: 24px;
+	}
+	.about-title {
+		margin-right: 30px;
+	}
+	.about-first {
+		min-height: 145px;
+	}
+
+	.about-menu-list {
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 30px;
+	}
+
+	.about-menu-list__item {
+		max-width: none;
+		display: flex;
+		margin-left: 0;
+		justify-content: center;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+
+	.about-information {
+		min-height: 870px;
+		background: none;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.list-image {
+		width: 380px;
+		height: 380px;
+		max-width: none;
+	}
+
+	.kurs-invite {
+		background-color: #353e47;
+		padding: 30px 0px;
+		margin-bottom: 0px;
+	}
+
+	.kurs-add {
+		font-size: 54px;
+		color: #ffffff;
+	}
+
+	.kurs-invite__button {
+		margin-top: 20px;
+		font-size: 37px;
+		background-color: #417078;
+	}
+	.about-label {
+		display: none;
+	}
+
+	.basic-item {
+		padding: 40px;
+		max-width: 37%;
+		background-color: #ffffff;
+		margin: 97px 0px 97px 12px;
+	}
+
+	.kurs-basics {
+		background: url(../img/photo5.png);
+		background-size: 59% auto;
+		background-color: #f2f2f2;
+		background-repeat: no-repeat;
+		background-position: right;
+		min-height: 511px;
+		display: flex;
+	}
+
+	.kb-label__item {
+		font-family: "Kizo";
+		text-transform: uppercase;
+		color: #3b3b3b;
+		font-size: 42px;
+		font-weight: 600;
+		max-width: 290px;
+		width: 100%;
+	}
+
+	.kb-information__item {
+		font-family: "Kizo";
+		color: #3b3b3b;
+		font-size: 24px;
+		max-width: 290px;
+		text-align: center;
+		font-weight: 600;
+	}
+
+	.kb-information {
+		margin-top: 20px;
+	}
+
+	.kurs-adv {
+		background: none;
+		min-height: 835px;
+	}
+
+	.more-kurs-logo {
+		background: none;
+		width: 35px;
+		background-color: #353e47;
+	}
+
+	.more-kurs-information__item {
+		color: #353e47;
+	}
+
+	.more-kurs-title__item {
+		color: #353e47;
+	}
+
+	.more-kurs {
+		padding: 110px 30px 110px 154px;
+	}
+
+	.more-kurs-title__item {
+		font-family: "Kizo";
+		text-transform: uppercase;
+		font-size: 63px;
+		font-weight: 600;
+		max-width: 290px;
+		width: 100%;
+	}
+
+	.more-kurs-information__item {
+		font-family: "Kizo";
+		font-size: 31px;
+		max-width: none;
+	}
+
+	.more-kurs-text {
+		margin-left: 50px;
+	}
+
+	.more-kurs-information__item {
+		margin-top: 20px;
+	}
+
+	.kurs-target {
+		background: none;
+		min-height: auto;
+	}
+
+	.kt-list-label {
+		padding: 50px 25px 35px 20px;
+		margin-left: -138px;
+	}
+
+	.kt-list-image {
+		height: 191px;
+		width: 349px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		display: flex;
+		align-items: center;
+	}
+
+	.kt-list-title {
+		font-size: 34px;
+		width: 215px;
+	}
+
+	.kt-list-information {
+		font-size: 23px;
+		margin-top: 5px;
+	}
+
+	.kurs-target-list__item {
+		margin-bottom: 0px;
+	}
+
+	.kurs-target-list {
+		justify-content: flex-end;
+	}
+
+	.kurs-target-logo {
+		display: none;
+	}
+
+	.feedback {
+		/* min-height: 500px; */
+		/* background: url(../img/background1.png); */
+		/* background-size: 55% 70%; */
+		/* background-position-y: center; */
+		/* background-color: #ffffff; */
+		/* background-repeat: no-repeat; */
+		background: none;
+		min-height: auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.feedback-label {
+		max-width: none;
+		display: flex;
+		justify-content: space-between;
+		font-family: "Kizo";
+		font-size: 64px;
+		color: #feffff;
+		writing-mode: unset;
+	}
+
+	.feedback-label__item {
+		-webkit-transform: inherit;
+		   -moz-transform: inherit;
+			-ms-transform: inherit;
+			 -o-transform: inherit;
+				transform: inherit;
+		text-transform: uppercase;
+		margin: 0 10px;
+		padding: 20px 0px;
+		color: black;
+	}
+
+	.label-line__item {
+		display: none;
+	}
+
+	.comments-item {
+		background-color: #ffffff;
+		width: 400px;
+		padding: 38px 10px 38px 10px;
+		box-shadow: 2px 2px 17px 0px rgba(0, 0, 0, 0.4);
+		margin-bottom: 90px;
+	}
+
+	.comment-title {
+		text-transform: uppercase;
+		max-width: 800px;
+		font-family: "Kizo";
+		text-align: center;
+		font-size: 39px;
+		color: #3b3b3b;
+		font-weight: 600;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	.comment-information {
+		max-width: 800px;
+		font-family: "Kizo";
+		font-size: 26px;
+		color: #3b3b3b;
+		text-align: center;
+	}
+
+	.main {
+		height: auto;
+	}
+
+	.footer {
+		height: 144px;
+		min-height: auto;
+		background-color: #353e47;
+		margin-top: 100px;
+		display: flex;
+		align-items: center;
+	}
+
+	.footer-content {
+		max-width: 480px;
+		margin: 0 auto;
+	}
+
+	.fc-title__item {
+		font-family: "Kizo";
+		font-size: 31px;
+		color: #ffffff;
+		text-transform: uppercase;
+	}
+
+	.fc-number__item {
+		font-family: "Kizo";
+		font-size: 24px;
+		color: #ffffff;
+		text-transform: uppercase;
+	}
+
+	.fc-information__item {
+		font-family: "Kizo";
+		font-size: 21px;
+		color: #ffffff;
+		text-transform: uppercase;
+	}
+
+	.social-ico__item {
+		width: 26px;
+		height: 25px;
+		margin: 10px 10px;
+	}
+
+	.footer-contacts {
+		margin-left: 30px;
+	}
+
+	.footer-logo {
+		width: 75px;
+		height: 75px;
+		background: url(../img/logo.png) no-repeat center center/contain;
+	}
+
+	.question-form {
+		width: 350px;
+	}
+
+	.qf-input_question {
+		width: auto;
+	}
+
+	.cell-form {
+		width: 100%;
+	}
+
+	.cells {
+		padding-left: 0px;
+	}
+
+	.cell-form_number>label {
+		left: 8px;
+		top: 1px;
+		border-bottom: 2px solid #3b3b3b;
+	}
+
+	.qf-input_number {
+		padding-left: 5px;
+		width: 201px;
+	}
+
+	.qf-input_name {
+		left: 0px;
+		padding-left: 5px;
+		width: 289px;
+	}
+
+	.cell-form_name>label {
+		border-bottom: 2px solid #3b3b3b;
+		left: 8px;
+		top: 1px;
+	}
+
+	.cell-form_question {
+		margin-top: 0px;
+	}
+
+	.qf-input_question {
+		left: 0px;
+		padding-left: 5px;
+		width: 235px;
+	}
+
+	.cell-form_question>label {
+		left: 8px;
+		top: 1px;
+		border-bottom: 2px solid #3b3b3b;
+	}
+
+	.btn-mobile {
+		display: block;
+		width: 80px;
+		height: 80px;
+		background: url("../img/btn-mob.png") no-repeat center center/contain;
+		background-size: 50px;
+	}
+
 }
