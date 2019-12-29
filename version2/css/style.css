@@ -44,7 +44,9 @@ table {
 
 @font-face{
 	font-family:'Kizo';
-	src:url('../fonts/kizo.otf') format("opentype");
+    src:    url('https://nomail.com.ua/files/eot/d41f419a6468d3c055d6d13ebc85788c.eot?#iefix') format('embedded-opentype'),
+            url('https://nomail.com.ua/files/woff/d41f419a6468d3c055d6d13ebc85788c.woff') format('woff'),
+            url('https://nomail.com.ua/files/woff2/d41f419a6468d3c055d6d13ebc85788c.woff2') format('woff2');
 	font-weight:400;
 	font-style:normal;
 }
