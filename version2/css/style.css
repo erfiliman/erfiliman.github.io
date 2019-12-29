@@ -44,7 +44,7 @@ table {
 
 @font-face{
 	font-family:'Kizo';
-	src:url('../fonts/kizo.otf');
+	src:url('../fonts/kizo.otf') format("opentype");
 	font-weight:400;
 	font-style:normal;
 }
