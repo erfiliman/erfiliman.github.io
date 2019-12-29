@@ -177,8 +177,8 @@ table {
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: nowrap;
-	background: url("../img/line.png");
-	
+	background-image: url("../img/line.png");
+	background-repeat: no-repeat;
 	background-size: contain;
 	min-height: 440px;
 	align-items: center;
@@ -267,19 +267,19 @@ table {
 }
 
 .list-image_kurs {
-	background: url("../img/image-m1.png");
+	background-image: url("../img/px2goZ2EMKo.jpg");
 	background-size: contain;
 	background-repeat: no-repeat;
 }
 
 .list-image_practic {
-	background: url("../img/image-m3.png");
+	background-image: url("../img/dWXTSkfRSZk.jpg");
 	background-size: contain;
 	background-repeat: no-repeat;
 }
 
 .list-image_skill {
-	background: url("../img/7cTem8Vpokk.jpg");
+	background-image: url("../img/7cTem8Vpokk.jpg");
 	background-size: contain;
 	background-repeat: no-repeat;
 }
