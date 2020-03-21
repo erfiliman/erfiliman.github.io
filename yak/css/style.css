@@ -147,7 +147,7 @@ body {
 	width: 100%;
 	min-height: 600px;
 	background-size: cover;
-	background-position: center;
+	background-position: left;
 	background-repeat: no-repeat;
 }
 
@@ -165,6 +165,40 @@ body {
 	background-color: #a03f3f!important;
 	margin: 0 auto;
 
+}
+
+.bg-form {
+	border-radius: 5px;
+	background-color: #e4e0e0;
+	-webkit-box-shadow: -1px 7px 37px -8px rgba(0,0,0,0.57);
+	-moz-box-shadow: -1px 7px 37px -8px rgba(0,0,0,0.57);
+	box-shadow: -1px 7px 37px -8px rgba(0,0,0,0.57);
+	color: #a03f3f!important;
+	font-size: 22px;
+}
+
+.form-block-sign {
+	max-width: 500px;
+}
+
+.btn-submit {
+	border-radius: 5px!important;
+	padding: 10px 20px !important;
+	border: none;
+	-webkit-box-shadow: -1px 7px 37px -8px rgba(0,0,0,0.57);
+	-moz-box-shadow: -1px 7px 37px -8px rgba(0,0,0,0.57);
+	box-shadow: -1px 7px 37px -8px rgba(0,0,0,0.57);
+	background-color: #a03f3f!important;
+	margin: 0 auto;
+	font-size: 18px;
+	width: 180px;
+	text-align: center;
+	color: white!important;
+
+}
+
+#u118 {
+	color: white;
 }
 
 #col-form {
@@ -253,6 +287,39 @@ body {
 	color: white !important;
 	margin: 10px;
 	font-weight: 100;
+}
+
+.var {
+	color: black;
+	font-size: 20px;
+	margin-right: 5px;
+}
+
+.card-item_info {
+	-webkit-box-shadow: 0px 4px 37px -8px rgba(0,0,0,0.57);
+	-moz-box-shadow: 0px 4px 37px -8px rgba(0,0,0,0.57);
+	box-shadow: 0px 4px 37px -8px rgba(0,0,0,0.57);
+	margin-bottom: 50px;
+}
+
+.list-cards_info__item {
+	margin: 4px 0px;
+}
+
+.value {
+	color: #724004;
+	font-size: 20px;
+}
+
+.card-item__img {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+
+}
+
+.title-card__item {
+	font-size: 22px;
 }
 
 
